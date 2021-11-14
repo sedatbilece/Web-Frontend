@@ -1,0 +1,6 @@
+>>   npx tailwindcss -o tailwind.css
+//tailwind.css dosyasınının projeye eklenmesi
+
+
+//vs code'da eklentisinin çalışabilmesi için config dosyası gerekli
+>>   npx tailwindcss init
