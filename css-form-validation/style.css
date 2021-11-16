@@ -1,0 +1,14 @@
+form{
+    zoom:2
+}
+
+form:invalid button[type="submit"]{
+    pointer-events: none;
+    opacity: .3;
+}
+
+
+form:valid button[type="submit"]{
+    pointer-events: initial;
+    opacity: 1;
+}
