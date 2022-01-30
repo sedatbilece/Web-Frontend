@@ -1,0 +1,18 @@
+.mainboard{
+    background-color: red;
+    width: 50%;
+    align-items: center;
+    height: 100vh;
+    margin-left: 25%;
+    
+}
+body{
+    margin : 0px;
+    
+}
+.mainboard2{
+    background-color: lime;
+    max-width: 1000px;
+    height: 400px;
+    min-width: 600px;
+}
