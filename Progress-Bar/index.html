@@ -11,14 +11,29 @@
 <body>
     
 <div class="main">
-
-<div class="progress">
-
-    <div style="width:40%; "> </div>
-
+ 
+<div class="container">
+    <input type="text" id="inputpross" >
+    <div class="progress">
+    
+        <div style="width:40%; " id="process-stick"> </div>
+    
+    </div>
 </div>
 
 </div>
 
+<script>
+    /* event listener */
+document.getElementById("inputpross").addEventListener('change', ChangeWidth)
+
+/* function */
+function ChangeWidth(){
+   console.log(document.getElementById("inputpross").value);
+    let inputValue =document.getElementById("inputpross").value;
+   document.getElementById("process-stick").style.width=inputValue+"%";
+  
+}
+</script>
 </body>
 </html>
