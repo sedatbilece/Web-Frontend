@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.box{
+    text-align: center;
+    padding: 20px;
+    border :1px solid #000;
+}
+.box1{
+    background-color: greenyellow;
+}
+.box2{
+    background-color: cyan;
+}
+.box3{
+    background-color: plum;
+}
+.box4{
+    background-color: orange;
+}
+.box5{
+    background-color: red;
+}
+.box6{
+    background-color: green;
+}
+.container{
+    display: grid;
+    grid-template-rows: 150px 250px;
+    grid-template-columns: 100px 3fr 1fr;
+}
