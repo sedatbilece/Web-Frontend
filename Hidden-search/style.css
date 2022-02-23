@@ -3,6 +3,9 @@
 }
 
 body{
+    background: hsla(331, 78%, 69%, 1);
+    background: linear-gradient(90deg, hsla(331, 78%, 69%, 1) 0%, hsla(238, 82%, 70%, 1) 100%);
+
     font-family: 'Roboto',sans-serif;
     display: flex;
     align-items: center;
@@ -11,9 +14,47 @@ body{
     overflow: hidden;
     margin: 0px;
 }
-.container{
-    display: flex;
-    width: 90vw;
-    justify-content: center;
+.search{
+    position: relative;
+    height: 50px;
+    
 }
 
+.search .input{
+
+    background-color: white;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    width: 50px;
+    transition: width 0.3s ease;
+    height: 50px;
+    outline: none;
+    
+    
+    
+}
+.btn{
+    background-color: white;
+    border:0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+    
+}
+.btn:focus .input:focus{
+    outline: none;
+}
+.search.active .input{
+    width: 200px;
+
+}
+.search.active .btn{
+    transform: translateX(198px);
+    
+}
