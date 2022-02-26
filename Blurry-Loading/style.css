@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+}
+.bg{
+    background: url('/img.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: -1;/* resmin yazını arkasında kalması için */
+
+    filter: blur(0px); /* blur efekti*/
+}
+
+.loading-text{
+    font-size: 50px;
+    color: white;
+
+}
+
