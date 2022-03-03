@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin: 0px;
+    overflow-x: hidden;/* ötelemeden dolayı oluşan sayfa dışına çıkmayı engeller*/
+}
+h1{
+    margin: 20px;
+}
+
+.box{
+font-size: 40px;
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px  rgba(0, 0, 0, 0.3);
+    transform: translateX(300%);
+    transition:  transform 0.4s ease-in-out;
+}
+.box.show{
+    transform: translateX(0);
+}
