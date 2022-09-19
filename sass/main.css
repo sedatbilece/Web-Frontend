@@ -1,0 +1,40 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #cd9791; }
+
+section article .article_title {
+  font-size: 32px;
+  color: #f2f2f2; }
+section article p span {
+  font-size: 14px;
+  background-color: black;
+  color: #f2f2f2;
+  padding: 5px;
+  font-weight: bold; }
+section article .article_body a {
+  color: #f2f2f2;
+  text-decoration: none; }
+  section article .article_body a:hover {
+    text-decoration: underline;
+    color: greenyellow; }
+
+.box, .box1, .box2, .box3 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin: 5px;
+  display: inline-block; }
+
+.box1 {
+  background: green;
+  border: 2px double red; }
+
+.box2 {
+  border-radius: 20px; }
+
+.box3 {
+  border-radius: 100%;
+  background: #f2f2f2; }
+
+/*# sourceMappingURL=main.css.map */

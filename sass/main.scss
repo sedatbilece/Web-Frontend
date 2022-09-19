@@ -1,0 +1,61 @@
+$back-color : #cd9791;
+$sec-color : #f2f2f2;
+body{
+    width: 960px;
+    margin: 0 auto;
+    background-color: $back-color;
+}
+
+section{
+    article{
+        .article_title{
+            font-size: 32px;
+            color:$sec-color;
+        }
+
+        p{
+            span{
+                font-size: 14px;
+                background-color: black;
+                color: $sec-color;
+                padding: 5px;
+                font-weight: bold;
+                
+            }
+        }
+        .article_body{
+            a{
+                color:$sec-color;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                    color:greenyellow;
+                }
+            }
+        }
+    }
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 5px;
+    display: inline-block
+}
+
+.box1 {
+    @extend .box;
+    background: green;
+    border: 2px double red
+}
+.box2 {
+    @extend .box;
+    border-radius: 20px
+}
+.box3 {
+    @extend .box;
+    border-radius: 100%;
+    background: $sec-color;
+}
